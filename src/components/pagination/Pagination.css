@@ -1,0 +1,78 @@
+.pagination-wrapper {
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    padding-right: 90px;
+    width: 800px;
+    height: 205px;
+}
+
+.pagination {
+    margin-top: 0px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    color: black;
+    float: left;
+    padding: 8px 12px;
+    background-color: #EDEDED;
+    border-radius: 50%;
+
+    width: 42px;
+    height: 40px;
+}
+
+.page.active {
+    background-color: #7E72F2;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.page:hover {
+    background-color: #7E72F2;
+    border: 1px solid #7E72F2;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.left-arrow {
+    margin-right: 12px;
+    padding-top: 6px;
+}
+
+.right-arrow {
+    margin-left: 12px;
+    padding-top: 6px;
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+    .pagination-wrapper{
+        width: 70%;
+        margin-left: 8%;
+    }
+}
+
+@media (max-width: 900px) {
+    .pagination-wrapper{
+        width: 70%;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 699px){
+    .pagination-wrapper{
+        width: 70%;
+        margin-left: 0px;
+    }
+}
+
+.noProducts{
+    width: 1000px;
+    height: 500px;
+    background: url('../../img/no-product-found.png') no-repeat;
+}

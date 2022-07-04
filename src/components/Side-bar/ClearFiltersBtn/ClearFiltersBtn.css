@@ -1,0 +1,37 @@
+.btn-clear-side-bar {
+    margin-top: 20px;
+}
+
+.btn_clear {
+    position: absolute;
+    width: 16.7%;
+    min-width: 180px;
+    height: 46px;
+    box-sizing:border-box;
+
+    background: #7E72F2;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #7E72F2;
+    border-radius: 7px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+    .btn_clear{
+        width: 21%;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 700px) {
+    .btn_clear{
+        width: 25%;
+    }
+}
+
+@media (max-width: 699px){
+    .btn_clear{
+        width: 90%;
+        position: relative;
+    }
+}

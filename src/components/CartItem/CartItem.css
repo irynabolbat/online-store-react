@@ -1,0 +1,126 @@
+.cart-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
+    border-radius: 8px;
+    height: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.cart-product {
+    width: 106px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.cart-product-name {
+    padding-top: 15px;
+    text-align: left;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cart-minus {
+    margin-top: 20px;
+    display: table-cell;
+    text-align: right;
+    color: #b6b6b6;
+}
+
+.cart-minus:hover{
+    color: #232323;
+}
+
+.cart-count {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.cart-plus {
+    margin-top: 20px;
+    text-align: left;
+    vertical-align: middle;
+    color: #b6b6b6;
+}
+
+.cart-plus:hover{
+    color: #232323;
+}
+
+.cart-product-prise {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.delete-from-cart {
+    float: right;
+    margin-top: 20px;
+    color: #b6b6b6;
+}
+
+.delete-from-cart:hover{
+    color: #232323;
+}
+
+.cart-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+
+.cart-col-1 {
+    width: calc(100% / 12);
+}
+
+.cart-col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.cart-col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+@media (max-width: 699px){
+    .cart-product{
+        width: 15%;
+    }
+    .cart-product-name{
+        font-size: 15px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .cart-minus, .cart-plus, .delete-from-cart{
+        width: 15px;
+        height: 15px;
+    }
+    .cart-count, .cart-product-prise{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 522px){
+    .cart-product{
+        width: 15%;
+    }
+    .cart-product-name{
+        font-size: 12px;
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+    .cart-minus, .cart-plus, .delete-from-cart{
+        width: 15px;
+        height: 15px;
+    }
+    .cart-count, .cart-product-prise{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+}

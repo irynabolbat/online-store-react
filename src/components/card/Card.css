@@ -1,0 +1,110 @@
+.card-wrapper {
+    position: relative;
+    width: 28%;
+    height: 414px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
+    border-radius: 8px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: #2C2C2C;
+
+    margin-bottom: 30px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.card-product {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    height: 200px;
+    top: 10px;
+}
+
+.rating {
+    position: absolute;
+    width: 25%;
+    height: 27px;
+    top: 230px;
+    float: left;
+    background: #7E72F2;
+    border-radius: 3px;
+}
+
+.rating p {
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+.rating img {
+    margin-left: 15%;
+}
+
+.product-price {
+    position: absolute;
+    height: 18px;
+    top: 237px;
+    left: 67%;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.product-name {
+    position: absolute;
+    width: 93%;
+    height: 32px;
+    top: 270px;
+    left: 7%;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.product-category {
+    position: absolute;
+    width: 39px;
+    height: 12px;
+    top: 330px;
+    left: 7%;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.btn-add {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 375px;
+    background: #7E72F2;
+    border: 1px solid #7E72F2;
+    border-radius: 0px 0px 5px 5px;
+    color: #fff;
+    right: 0px;
+}
+
+.btn-add:hover{
+    background: #7368da;
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+    .card-wrapper{
+        width: 35%;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-wrapper{
+        width: 52%;
+    }
+}
+
+@media (max-width: 700px) {
+    .rating {
+        width: 28%;
+    }
+}

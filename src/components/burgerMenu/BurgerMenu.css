@@ -1,0 +1,56 @@
+.burgerMenu {
+    color:#7e72f2;
+    margin-left: 40%;
+}
+
+.burgerMenu:hover{
+    color: #6610f2;
+    cursor: pointer;
+}
+
+.modal-side-bar {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0 ,0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.modal-side-bar.active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    z-index: 1;
+}
+
+.modal-content-side-bar {
+    padding: 20px;
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    transition: scale(0.5);
+    transition: 0.4s all;
+    overflow-y: scroll;
+}
+
+.modal-content-side-bar.active {
+    transition: scale(1);
+}
+
+.close-side-bar {
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.close-side-bar:hover {
+    color:#7E72F2
+}

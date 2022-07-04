@@ -1,0 +1,31 @@
+.search-wrapper {
+    position: relative;
+}
+
+.search {
+    background: url('../../img/searchIcon.png') no-repeat right;
+    background-size: auto 47%;
+    background-origin: content-box;
+    position: absolute;
+    height: 45px;
+    box-shadow: 0px 2px 8px rgba(62, 62, 62, 0.15);
+    border-radius: 7px;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;  
+    width: 96%;
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+    .search{
+        width: 77%;
+    }
+}
+
+@media (max-width: 900px) {
+    .search{
+        width: 55%;
+    }
+}

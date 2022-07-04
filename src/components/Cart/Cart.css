@@ -1,0 +1,148 @@
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0 ,0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    transition: scale(0.5);
+    transition: 0.4s all;
+    overflow-y: scroll;
+}
+
+.modal-content.active {
+    transition: scale(1);
+}
+
+.close-icon {
+    margin-left: 98%;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.close-icon:hover{
+    color:#7E72F2;
+}
+
+.clean-cart {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #b6b6b6;
+    margin-left: 85%;
+    cursor: pointer;
+}
+
+.clean-cart:hover{
+    color: #232323;
+}
+
+.clean-cart-icon {
+    padding-right: 7px;
+    margin-top: -4px;
+}
+
+.cart-total_price {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.cart-btn-order {
+    text-align: center;
+}
+
+.btn_order {
+    width: 200px;
+    text-align: center;
+    background: #7E72F2;
+    color: #fff;
+    border: 1px solid #7E72F2;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.btn_order:hover{
+    background-color: #7368da;
+}
+
+@media (max-width: 1200px){
+    .clean-cart{
+        margin-left: 80%;
+    }
+}
+
+@media (max-width: 920px){
+    .clean-cart{
+        margin-left: 75%;
+    }
+}
+
+@media (max-width: 750px){
+    .clean-cart{
+        margin-left: 70%;
+    }
+}
+
+@media (max-width: 639px){
+    .clean-cart{
+        font-size: 16px;
+        margin-left: 70%;
+    }
+}
+
+@media (max-width: 547px){
+    .clean-cart{
+        font-size: 16px;
+        margin-left: 65%;
+    }
+}
+
+@media (max-width: 479px){
+    .clean-cart{
+        font-size: 16px;
+        margin-left: 60%;
+    }
+}
+
+@media (max-width: 429px){
+    .clean-cart{
+        font-size: 16px;
+        margin-left: 55%;
+    }
+}
+
+@media (max-width: 389px){
+    .clean-cart{
+        font-size: 16px;
+        margin-left: 50%;
+    }
+}
