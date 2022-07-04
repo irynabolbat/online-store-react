@@ -50,10 +50,19 @@ a {
     padding-top: 6px;
 }
 
+.noProducts{
+    width: 1000px;
+    height: 500px;
+    background: url('../../img/no-product-found.png') no-repeat;
+}
+
 @media (max-width: 1100px) and (min-width: 900px) {
     .pagination-wrapper{
         width: 70%;
         margin-left: 8%;
+    }
+    .noProducts{
+        background: url('../../img/no-products-found2.png') no-repeat;
     }
 }
 
@@ -62,6 +71,9 @@ a {
         width: 70%;
         margin-left: 0px;
     }
+    .noProducts{
+        background: url('../../img/no-products-found2.png') no-repeat;
+    }
 }
 
 @media (max-width: 699px){
@@ -69,10 +81,8 @@ a {
         width: 70%;
         margin-left: 0px;
     }
+    .noProducts{
+        background: url('../../img/no-products-found2.png') no-repeat;
+    }
 }
 
-.noProducts{
-    width: 1000px;
-    height: 500px;
-    background: url('../../img/no-product-found.png') no-repeat;
-}
