@@ -25,7 +25,7 @@ const Card = ({item, img, rating, price, title, category, brand, id, addItem}) =
             <p className="product-category">
                 {category}
             </p>
-            <button className="btn-add" onClick={() => addItem(item)}>ADD TO CART</button>
+            <button className="btn-add" onClick={() => {addItem(item); alert('Product added to the cart')}}>ADD TO CART</button>
         </div>
     )
 }
