@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css'
+import { ReactNotifications } from 'react-notifications-component'
 import  Header  from './components/Header/Header';
 import { CardsList } from './components/Cards-list/CardsList';
 import { Pagination } from './components/pagination/Pagination';
@@ -52,6 +53,8 @@ function App() {
       <div className="grid-container">
         <div className="row">
           <div>
+            <ReactNotifications />
+
             <Header
                 items={items} 
                 setItems={setItems} 

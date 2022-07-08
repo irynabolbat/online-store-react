@@ -4,11 +4,26 @@ import './Cart.css'
 import { CartItem } from "../CartItem/CartItem";
 import { removeItemById, cleanCart, minusItem, plusItem} from '../../redux/actions/cartAction'; 
 import { isDisabled } from "@testing-library/user-event/dist/utils";
+import { Store } from 'react-notifications-component';
+import 'react-notifications-component/dist/theme.css'
 
 const Cart = ({active, setActive, cartItems, totalPrice, removeItem, removeAllItems, onMinusItem, onPlusItem}) => {
 
-    const orderProduct = () => {
-        alert('Thank you for your order!')
+    const orderNotification = () => {
+        Store.addNotification({
+            title: "Your order has been successfully completed!",
+            message: 'Thank you for your order!',
+            type: 'success',
+            container: 'top-center',
+            insert: 'bottom',
+            animationIn: 'zoon-in',
+            animationOut: 'zoom-out',
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 300
+        })
     }
 
     return (
@@ -48,7 +63,7 @@ const Cart = ({active, setActive, cartItems, totalPrice, removeItem, removeAllIt
                 </div>
 
                 <div className="cart-btn-order">
-                    <button className="btn_order" onClick={totalPrice === 0 ? isDisabled : orderProduct}>ORDER</button>
+                    <button className="btn_order" onClick={totalPrice === 0 ? isDisabled : orderNotification}>ORDER</button>
                 </div>
             </div>
         </div>
