@@ -10,7 +10,7 @@ const Card = ({item, img, rating, price, title, category, brand, id, addItem}) =
 
     const addNotification = () => {
         Store.addNotification({
-            title: "Product adde to the cart!",
+            title: "Product added to the cart!",
             message: 'Your product has been successfully added to the cart!',
             type: 'success',
             container: 'top-center',
@@ -21,7 +21,7 @@ const Card = ({item, img, rating, price, title, category, brand, id, addItem}) =
                 duration: 2000,
                 showIcon: true
             },
-            width: 300
+            width: 350
         })
     }
 

@@ -77,24 +77,26 @@ function App() {
           <div className="gridDiv"></div>
           <div className='gridLeft'> 
             <div className='sideB'>
-              <SideBar 
-                items={items} 
-                setItems={setItems} 
-                searсhCategory={searсhCategory} 
-                setSearchCategory={setSearchCategory} 
-                searсhBrand={searсhBrand}
-                setSearchBrand={setSearchBrand}
-                setCurrentPage={setCurrentPage}
+              <div className="side-box">
+                <SideBar 
+                  items={items} 
+                  setItems={setItems} 
+                  searсhCategory={searсhCategory} 
+                  setSearchCategory={setSearchCategory} 
+                  searсhBrand={searсhBrand}
+                  setSearchBrand={setSearchBrand}
+                  setCurrentPage={setCurrentPage}
 
-                minPrice={0} maxPrice={85000}
-                priceValue={priceValue}
-                setPriceValue={setPriceValue}
-                minRating={0} maxRating={5}
-                ratingValue={ratingValue}
-                setRatingValue={setRatingValue}
+                  minPrice={0} maxPrice={85000}
+                  priceValue={priceValue}
+                  setPriceValue={setPriceValue}
+                  minRating={0} maxRating={5}
+                  ratingValue={ratingValue}
+                  setRatingValue={setRatingValue}
 
-                setSearchValue={setSearchValue}
-              />
+                  setSearchValue={setSearchValue}
+                />
+              </div>
             </div>
           </div>
 

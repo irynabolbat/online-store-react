@@ -14,7 +14,6 @@ export const SideBar = ({
 }) => {
     return (
         <div>
-            <div className="side-box">
                 <PriceSlider 
                     minPrice={minPrice}
                     maxPrice={maxPrice}
@@ -46,7 +45,6 @@ export const SideBar = ({
                     setRatingValue={setRatingValue}
                     setCurrentPage={setCurrentPage} 
                 />
-            </div>
 
             <ClearFiltersBtn 
                 setSearchValue={setSearchValue} 
