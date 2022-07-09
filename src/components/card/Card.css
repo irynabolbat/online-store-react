@@ -1,6 +1,6 @@
 .card-wrapper {
     position: relative;
-    width: 28%;
+    width: 30%;
     height: 414px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
@@ -12,8 +12,6 @@
     color: #2C2C2C;
 
     margin-bottom: 30px;
-    margin-right: 2%;
-    margin-left: 2%;
 }
 
 .card-product {
@@ -26,7 +24,7 @@
 
 .rating {
     position: absolute;
-    width: 25%;
+    width: 27%;
     height: 27px;
     top: 230px;
     float: left;
@@ -91,20 +89,29 @@
     background: #7368da;
 }
 
-@media (max-width: 1100px) and (min-width: 900px) {
+@media (max-width: 1000px) and (min-width: 800px) {
     .card-wrapper{
-        width: 35%;
+        width: 45%;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .card-wrapper{
-        width: 52%;
+        width: 60%;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 600px)  {
     .rating {
-        width: 28%;
+        width: 23%;
+    }
+    .card-wrapper{
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px){
+    .card-wrapper{
+        width: 51%;
     }
 }

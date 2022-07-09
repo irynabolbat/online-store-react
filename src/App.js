@@ -7,6 +7,7 @@ import { Pagination } from './components/pagination/Pagination';
 import {SideBar} from './components/Side-bar/SideBar';
 import { Search } from './components/Search/Search';
 import MyLoader from './components/Skeleton/Skeleton';
+import {ClearFiltersBtn} from './components/Side-bar/ClearFiltersBtn/ClearFiltersBtn'
 
 
 function App() {
@@ -50,8 +51,8 @@ function App() {
     return <MyLoader />
   } else {
     return (
-      <div className="grid-container">
-        <div className="row">
+      <div className="grid-container row">
+        {/* <div className="row"> */}
           <div>
             <ReactNotifications />
 
@@ -97,6 +98,15 @@ function App() {
                   setSearchValue={setSearchValue}
                 />
               </div>
+
+              <ClearFiltersBtn 
+                setSearchValue={setSearchValue} 
+                setSearchCategory={setSearchCategory} 
+                setSearchBrand={setSearchBrand}
+                setPriceValue={setPriceValue}
+                setRatingValue={setRatingValue}
+              />
+              
             </div>
           </div>
 
@@ -139,7 +149,7 @@ function App() {
               </div>
           </div>
           <div className='gridDiv'></div>
-        </div>
+        {/* </div> */}
       </div>
     )
   }

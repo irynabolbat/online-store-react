@@ -8,8 +8,8 @@ export const CardsList = ({
 }) => {
 
     return (
-        <div className="list-wrapper">
-            <div className="card-in-list row">
+        <div className="card-in-list row">
+            {/* <div className="card-in-list row"> */}
             {   
                 items.filter(item => {
                     return priceValue[0] <= item.price  &&  item.price <= priceValue[1]
@@ -44,7 +44,7 @@ export const CardsList = ({
                         brand={item.brand}
                     />})
                 }
-            </div>
+            {/* </div> */}
         </div>
     )
 }

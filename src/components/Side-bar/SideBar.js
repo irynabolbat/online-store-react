@@ -45,14 +45,6 @@ export const SideBar = ({
                     setRatingValue={setRatingValue}
                     setCurrentPage={setCurrentPage} 
                 />
-
-            <ClearFiltersBtn 
-                setSearchValue={setSearchValue} 
-                setSearchCategory={setSearchCategory} 
-                setSearchBrand={setSearchBrand}
-                setPriceValue={setPriceValue}
-                setRatingValue={setRatingValue}
-            />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 body{
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 
 .errorMes {
@@ -29,8 +29,12 @@ body{
     color: #2C2C2C;
 }
 
+.row{
+    justify-content: space-around;
+}
+
 .gridDiv {
-    width: 7%;
+    width: 7.5%;
 }
 
 .gridRight {
@@ -53,6 +57,11 @@ body{
     float: right;
 }
 
+.sr{
+    margin-bottom: 60px;
+    width: 100%;
+}
+
 @media (max-width: 1200px) and (min-width: 900px) {
     .gridDiv {
         width: 2.5%;
@@ -65,7 +74,7 @@ body{
     }
 }
 
-@media (max-width: 900px) and (min-width: 700px) {
+@media (max-width: 900px) and (min-width: 599px) {
     .gridDiv {
         display: none;
     }
@@ -77,7 +86,7 @@ body{
     }
 }
 
-@media (max-width: 699px){
+@media (max-width: 600px) and (min-width: 400px){
     .gridDiv {
         display: none;
     }
@@ -86,11 +95,33 @@ body{
     }
     .gridRight{
         width: 100%;
-        margin-left: 20px;
+    }
+    .sr{
+        width: 99%;
+        margin-left: 1%;
     }
 }
 
-.sr{
-    margin-bottom: 60px;
-    width: 100%;
+@media (max-width: 400px) and (min-width:200px) {
+    .gridDiv {
+        display: none;
+    }
+    .sideB {
+        display: none;
+    }
+    .gridRight{
+        width: 100%;
+    }
+}
+
+@media (max-width: 200px){
+    .gridDiv {
+        display: none;
+    }
+    .sideB {
+        display: none;
+    }
+    .gridRight{
+        width: 100%;
+    }
 }

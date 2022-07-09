@@ -28,7 +28,7 @@ const Card = ({item, img, rating, price, title, category, brand, id, addItem}) =
     return (
         <div className="card-wrapper" brand={brand} id={id} key={id}>
             <img src={img} alt={category} className="card-product" />
-            <div className="rating col-6">
+            <div className="rating">
                 <p>
                     {rating}
                     <img src={star} alt='rating stars' />

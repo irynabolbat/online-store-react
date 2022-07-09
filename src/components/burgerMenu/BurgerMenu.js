@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './BurgerMenu.css'
 import { SideBar } from "../Side-bar/SideBar";
+import { ClearFiltersBtn } from "../Side-bar/ClearFiltersBtn/ClearFiltersBtn";
 
 export const BurgerMenu = ({
     items, setItems, searсhCategory, 
@@ -37,6 +38,13 @@ export const BurgerMenu = ({
                             setRatingValue={setRatingValue}
 
                             setSearchValue={setSearchValue}
+                        />
+                        <ClearFiltersBtn 
+                            setSearchValue={setSearchValue} 
+                            setSearchCategory={setSearchCategory} 
+                            setSearchBrand={setSearchBrand}
+                            setPriceValue={setPriceValue}
+                            setRatingValue={setRatingValue}
                         />
                         <div className="apply">
                             <button className="btn-apply" onClick={() => setModalSideBarActive(false)}>APPLY FILTERS</button>
