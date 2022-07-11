@@ -12,6 +12,7 @@
     color: #2C2C2C;
 
     margin-bottom: 30px;
+    margin-left: 2.5%;
 }
 
 .card-product {
@@ -98,6 +99,7 @@
 @media (max-width: 800px) {
     .card-wrapper{
         width: 60%;
+        margin-left: 20%;
     }
 }
 
@@ -107,11 +109,13 @@
     }
     .card-wrapper{
         width: 75%;
+        margin-left: 12.5%;
     }
 }
 
 @media (max-width: 600px){
     .card-wrapper{
         width: 51%;
+        margin-left: 24.5%;
     }
 }
