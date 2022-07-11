@@ -1,9 +1,8 @@
 .pagination-wrapper {
     margin: 20px auto;
     position: relative;
+    width: 100%;
     text-align: center;
-    padding-right: 90px;
-    width: 800px;
     height: 205px;
 }
 
@@ -19,6 +18,7 @@ a {
 .page {
     color: black;
     float: left;
+    text-align: center;
     padding: 8px 12px;
     background-color: #EDEDED;
     border-radius: 50%;
@@ -57,33 +57,87 @@ a {
     background-size: 80%;
 }
 
-@media (max-width: 1100px) and (min-width: 900px) {
+@media (max-width: 1350px) and (min-width: 1100px) {
     .pagination-wrapper{
-        width: 70%;
-        margin-left: 8%;
+        width: 100%;
     }
     .noProducts{
         background-size: 35%;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) and (min-width: 950px) {
     .pagination-wrapper{
-        width: 70%;
+        width: 100%;
         margin-left: 0px;
+    }
+    .page{
+        width: 37px;
+        height: 35px;
+        padding: 5px 7px;
     }
     .noProducts{
         background-size: 30%;
     }
 }
 
-@media (max-width: 699px){
+@media (max-width: 950px) and (min-width: 700px){
     .pagination-wrapper{
-        width: 70%;
-        margin-left: 0px;
+        width: 100%;
     }
     .noProducts{
         background-size: 30%;
     }
+    .page{
+        width: 27px;
+        height: 28px;
+        padding: 3px 6px;
+    }
+    .left-arrow{
+        margin-right: 0px;
+    }
+    .right-arrow {
+        margin-left: 0px;
+    }
 }
 
+@media (max-width: 700px) and (min-width: 600px) {
+    .pagination-wrapper{
+        width: 100%;
+    }
+    .noProducts{
+        background-size: 30%;
+    }
+    .page{
+        width: 23px;
+        height: 25px;
+        padding: 3px 6px;
+    }
+    .left-arrow{
+        margin-right: 0px;
+    }
+    .right-arrow {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 600px){
+    .pagination-wrapper{
+        width: 100%;
+        margin-left: 2%;
+    }
+    .noProducts{
+        background-size: 30%;
+    }
+    .page{
+        width: 28px;
+        height: 27px;
+        padding: 3px 6px;
+    }
+    .left-arrow{
+        margin-right: 0px;
+    }
+    .right-arrow {
+        margin-left: 0px;
+    }
+}

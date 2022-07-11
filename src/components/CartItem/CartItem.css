@@ -87,7 +87,10 @@
     width: calc(100% / 12 * 5);
 }
 
-@media (max-width: 699px){
+@media (max-width: 800px){
+    .cart-wrapper {
+        height: 105px;
+    }
     .cart-product{
         width: 15%;
     }

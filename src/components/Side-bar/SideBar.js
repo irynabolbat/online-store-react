@@ -14,37 +14,37 @@ export const SideBar = ({
 }) => {
     return (
         <div>
-                <PriceSlider 
-                    minPrice={minPrice}
-                    maxPrice={maxPrice}
-                    priceValue={priceValue}
-                    setPriceValue={setPriceValue}
-                    setCurrentPage={setCurrentPage} 
-                />
+            <PriceSlider 
+                minPrice={minPrice}
+                maxPrice={maxPrice}
+                priceValue={priceValue}
+                setPriceValue={setPriceValue}
+                setCurrentPage={setCurrentPage} 
+            />
 
-                <CatCheckbox 
-                    items={items} 
-                    searсhCategory={searсhCategory} 
-                    setSearchCategory={setSearchCategory} 
-                    setCurrentPage={setCurrentPage} 
-                />
-                <hr />
+            <CatCheckbox 
+                items={items} 
+                searсhCategory={searсhCategory} 
+                setSearchCategory={setSearchCategory} 
+                setCurrentPage={setCurrentPage} 
+            />
+            <hr />
 
-                <BrandCheckbox
-                    items={items}
-                    searсhBrand={searсhBrand}
-                    setSearchBrand={setSearchBrand}
-                    setCurrentPage={setCurrentPage}
-                />
-                <hr />
+            <BrandCheckbox
+                items={items}
+                searсhBrand={searсhBrand}
+                setSearchBrand={setSearchBrand}
+                setCurrentPage={setCurrentPage}
+            />
+            <hr />
 
-                <RatingSlider 
-                    minRating={minRating}
-                    maxRating={maxRating}
-                    ratingValue={ratingValue}
-                    setRatingValue={setRatingValue}
-                    setCurrentPage={setCurrentPage} 
-                />
+            <RatingSlider 
+                minRating={minRating}
+                maxRating={maxRating}
+                ratingValue={ratingValue}
+                setRatingValue={setRatingValue}
+                setCurrentPage={setCurrentPage} 
+            />
         </div>
     )
 }

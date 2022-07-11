@@ -14,7 +14,7 @@ body{
 .side-box {
     position: relative;
     width: 90%;
-    min-width: 180px;
+    min-width: 195px;
     height: 70%;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
@@ -34,11 +34,11 @@ body{
 }
 
 .gridDiv {
-    width: 7.5%;
+    width: 15%;
 }
 
 .gridRight {
-    width: 65%;
+    width: 50%;
 }
 
 .gridLeft {
@@ -62,9 +62,9 @@ body{
     width: 100%;
 }
 
-@media (max-width: 1200px) and (min-width: 900px) {
+@media (max-width: 1350px) and (min-width: 900px) {
     .gridDiv {
-        width: 2.5%;
+        display: none;
     }
     .gridRight {
         width: 70%;
