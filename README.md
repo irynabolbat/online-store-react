@@ -1,1 +1,1 @@
-https://irinabolbat.github.io/online-store-react/
+https://irynabolbat.github.io/online-store-react/
